@@ -278,13 +278,21 @@ header .navbar ul li a:hover{
 }
 
 /* ---------------skills style------------------*/
+
+.skill{
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 25px;
+}
 .skill .myskill{
     text-transform: uppercase;
     list-style: none;
     background: #333;
-    width: 500px;
+    width: 100%;
     margin: 60px auto;
     color: #fff;
+    border-radius: 20px;
+
     /* box-shadow: 0.14px 28px rgba(118, 139, 41, 0.25), 0 10px 10px rgba(148, 20, 20, 0.22); */
 }
 
@@ -514,9 +522,10 @@ header .navbar ul li a:hover{
         width:100%;
     }
 
-    .portfolio .box-container .box{
+    .skill .myskill li{
         width:100%;
     }
+
 
     .contact .row form{
         margin:3rem 0;
