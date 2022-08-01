@@ -522,11 +522,14 @@ header .navbar ul li a:hover{
         width:100%;
     }
 
-    .skill .myskill li{
+    .skill .myskill {
         width:100%;
     }
 
 
+    .skill .myskill{
+        margin:3rem 0;
+    }
     .contact .row form{
         margin:3rem 0;
     }
