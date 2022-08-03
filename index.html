@@ -109,7 +109,7 @@
                 <h3>Diploma in Mechanical Engineering</h3>
                 <p>Completed Diploma.(Mechanical) with First Class With Distinction from Shri Shivajirao Dechmikh Institute of 
                     Technnology, Red-Shirala
-                    under MSBTE ,Kolhapur in 2017.</p>
+                    under MSBTE , in 2017.</p>
             </div>
             
             
@@ -179,12 +179,12 @@
 
             </div>
 
-            <form action="">
+            <form action="javascript:sendmail()" method="post">
 
-                <input type="text" placeholder="name" class="box">
-                <input type="email" placeholder="email" class="box">
-                <input type="text" placeholder="project" class="box">
-                <textarea name="" id="" cols="30" rows="10" class="box message" placeholder="message"></textarea>
+                <input type="text" placeholder="name" id="name" class="box" required>
+                <input type="email" placeholder="email" id="email" class="box" required>
+                <input type="text" placeholder="project" id="subject" class="box" required>
+                <textarea name="" id="message" cols="30" rows="10"  class="box message" placeholder="message" required></textarea>
                 <button type="submit" class="btn"> Send <i class="fas fa-paper-plane"></i> </button>
 
             </form>
@@ -224,5 +224,38 @@
 
 
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js">
+</script>
+<Script>
+    function sendmail(){
+        var name = $('#name').val();
+        var email = $('#email').val();
+        var subject = $('#subject').val();
+       var message = $('#message').val();
 
+        var Body = 'Name: '+name+'<br>Email: '+email+'<br>Subject: '+subject+
+        '<br>Message'+message;
+    }
+Email.send({
+    Host : "smtp.gmail.com",
+    Username : "username",
+    Password : "password",
+    To : 'prasadkolekar1998@gmail.com',
+    From : "you@isp.com",
+    Subject : "New mail on contact form"+name,
+    Body : Body
+}).then(
+  message => {
+    if(message == 'ok'){
+
+        alert('thank you email has send')
+    }
+    else{
+        console.error(message);
+        alert('There is Error at Sending')
+    }
+}
+);
+</Script>
 </html>
