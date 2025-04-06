@@ -300,7 +300,7 @@ header .navbar ul li a:hover{
     margin: 5px;
 }
 .skill .myskill li{
-    margin: 20px 0;
+    margin: 15px 0;
     padding: 10px;
    
 }
@@ -334,9 +334,13 @@ header .navbar ul li a:hover{
     width: 55%;
     animation: java 3s;
 }
-.J2EE{
+.mvc{
     width: 60%;
-    animation: java 3s;
+    animation: mvc 3s;
+}
+.Entity{
+    width: 60%;
+    animation: Entity 3s;
 }
 .html{
     width: 70%;
