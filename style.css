@@ -326,13 +326,17 @@ header .navbar ul li a:hover{
     background: linear-gradient(135deg, rgba(0, 0, 0, 1)0%, var(--yellow)100%);
 }
 
-.java{
+.C{
     width: 60%;
-    animation: java 3s;
+    animation: C 3s;
 }
 .sql{
     width: 55%;
-    animation: java 3s;
+    animation: sql 3s;
+}
+.mysql{
+    width: 55%;
+    animation: mysql 3s;
 }
 .mvc{
     width: 60%;
@@ -355,11 +359,15 @@ header .navbar ul li a:hover{
     animation: javascript 3s;
 }
 
-@keyframes java {
+@keyframes C {
     0%{width: 0%;}
     60%{width: 0%;}
 }
 @keyframes sql {
+    0%{width: 0%;}
+    50%{width: 0%;}
+}
+@keyframes mysql {
     0%{width: 0%;}
     50%{width: 0%;}
 }
