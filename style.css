@@ -334,9 +334,9 @@ header .navbar ul li a:hover{
     width: 55%;
     animation: sql 3s;
 }
-.mysql{
+.github{
     width: 55%;
-    animation: mysql 3s;
+    animation: github 3s;
 }
 .mvc{
     width: 60%;
@@ -367,11 +367,11 @@ header .navbar ul li a:hover{
     0%{width: 0%;}
     50%{width: 0%;}
 }
-@keyframes mysql {
+@keyframes github {
     0%{width: 0%;}
     50%{width: 0%;}
 }
-@keyframes J2EE {
+@keyframes Entity {
     0%{width: 0%;}
     40%{width: 0%;}
 }
@@ -379,7 +379,7 @@ header .navbar ul li a:hover{
     0%{width: 0%;}
     70%{width: 0%;}
 }
-@keyframes css {
+@keyframes mvc {
     0%{width: 0%;}
     60%{width: 0%;}
 }
